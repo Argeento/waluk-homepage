@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 a {
@@ -13,40 +14,17 @@ a:hover {
 }
 
 .container {
-    width: 1500px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1700px) {
-    .container {
-        width: 1100px;
-    }
-}
-
-@media screen and (max-width: 1120px) {
-    .container {
-        width: 900px;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .container {
-        width: 800px;
-    }
-}
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     .container {
         width: auto;
-        margin: 0 20px;
+        margin: 0 30px;
     }
 }
 
-@media screen and (max-width: 425px) {
-    .container {
-        margin: 0 10px;
-    }
-}
 
 .header {
     background-color: #eaeaea;
@@ -104,7 +82,7 @@ a:hover {
 }
 
 .section {
-    padding: 40px 0;
+    padding: 105px 0;
 }
 
 .section--light {
@@ -157,14 +135,14 @@ a:hover {
     margin-top: 4px;
 }
 
-.abilities {
+.skills {
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-size: 14px;
 }
 
-.abilities__item {
+.skills__item {
     display: inline-block;
     border: 1px solid #3384b4;
     margin: 0 10px 15px 0;
@@ -177,34 +155,42 @@ a:hover {
     clear: both;
 }
 
-.contact__item {
-    float: left;
-    margin: 5px 30px 10px 0;
+.figure-link {
+    display: inline-block;
 }
 
-.contact__image {
+@media screen and (max-width: 500px) {
+    .figure-link {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+.figure-link__image {
     height: 80px;
 }
 
-.contact__description {
+.figure-link__caption {
     text-align: center;
 }
 
-.footer {
-    margin: 0;
+.figure-link__figure {
+    margin: 5px 30px 10px 0;
 }
 
-.footer--right {
+.go-to-top {
     float: right;
-}
-
-.footer__link {
     color: #fff;
     text-decoration: none;
 }
 
-.footer__link:hover {
+.go-to-top:hover {
     text-decoration: underline;
+}
+
+.footer {
+    padding: 40px 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -222,10 +208,10 @@ a:hover {
         text-align: center;
     }
 
-    .footer--right {
+    .go-to-top {
         float: none;
-        text-align: right;
-        margin-bottom: 20px;
+        display: block;
+        margin: 20px auto 0;
     }
 }
 
